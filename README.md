@@ -5,7 +5,7 @@ to calculate a perspective transformation matrix.
 
 This affine transformation matrix is calculated from 8 points:
 - the 4 first are the original points,
-- the last 4 are the transformed points,
+- the last 4 are the transformed points,  
 the result is a 4x4 matrix calculated for the transform of css parameter
 
 ```
