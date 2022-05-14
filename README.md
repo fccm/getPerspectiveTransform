@@ -1,5 +1,12 @@
 ## getPerspectiveTransform
-js实现opencv中的getPerspectiveTransform方法，计算仿射变换矩阵，参数是8个点，前四个是原始点，后四个是变换后的点，可以计算出4*4的矩阵，用于css的transform参数
+
+Javascript implementation of the getPerspectiveTransform() method from OpenCV
+to calculate a perspective transformation matrix.
+
+This affine transformation matrix is calculated from 8 points:
+- the 4 first are the original points,
+- the last 4 are the transformed points,
+the result is a 4x4 matrix calculated for the transform of css parameter
 
 ```
 <script src="./getPerspectiveTransform.js"></script>
@@ -10,4 +17,4 @@ js实现opencv中的getPerspectiveTransform方法，计算仿射变换矩阵，�
   document.querySelector('#image').style.transform = 'matrix3d(' + m.join(',') + ')';
 </script>
 ```
-![透视变换结果](demo.png)
+![Perspective Transformation Result](demo.png)

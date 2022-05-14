@@ -113,6 +113,6 @@ function getPerspectiveTransform(op0, op1, op2, op3, np0, np1, np2, np3) {
                 for (var u = n[a + s * o] = 0; u < i; ++u) n[a + s * o] += t[a + u * i] * e[u + s * o];
         return n
     }
-    var l = [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]; // 初始的单位矩阵
+    var l = [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1];  // the initial identity matrix
     return At(Ot(l, Xt(op0, op1, op2, op3, np0, np1, np2, np3), 4));
 }
